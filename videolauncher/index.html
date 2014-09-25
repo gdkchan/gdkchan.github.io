@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>VideoLauncher</title>
+</head>
+
+<body>
+<link href="http://fonts.googleapis.com/css?family=Bubblegum+Sans:400" rel="stylesheet" type="text/css">
+<style>
+  body {background-color: #E3E3E3;}
+  p {margin: 0 10px 0 10px;}
+  .my_title {
+    font-family: 'Bubblegum Sans';
+    font-size: 48px;
+  }
+  .big {font-size: 24px;}
+  .main_body {
+    margin: 10px 10px 10px 10px;
+    background-color: #FFFFFF;
+	box-shadow: 0 0 8px #7F7F7F;
+	text-align: justify;
+    text-justify: inter-word;
+  }
+  .downloads_sect {
+    margin: 0 10px 0 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	background-color: #C8C8C8;
+  }
+</style>
+
+<br/>
+<div class="main_body">
+<center><p class="my_title">VideoLauncher</p></center>
+<br/>
+<p><b>Sumário</b></p>
+<p>O VideoLauncher é um aplicativo escrito em VB.NET/WPF para procurar, assistir e baixar vídeos de sites populares, tais como o Youtube, UOL Mais, Vimeo e Daily Motion. Outros recursos como suporte a listas de reprodução e comentários também são ou serão suportados no futuro.</p>
+<br/>
+<p><b>Funcionamento</b></p>
+<p>Para a extração de vídeos, a página que contém o vídeo é baixada, e então, atrávés de expressões regulares (RegEx), os dados relevantes para o aplicativo são extraídos do código HTML/JavaScript da página. No caso da extração, os dados relevantes são os links para os <i>Video Streams</i>, que são basicamente links diretos para os vídeos, usados pelo player para fazer a reprodução do mesmo. Estes links também são usados para se fazer o download dos vídeos. No caso do Youtube, as informações relevantes também incluem uma assinatura usada para proteger vídeos do VEVO (entre outros), e as <i>ITags</i>, que são códigos próprios do Youtube que determinam o formato, resolução e qualidade em geral do vídeo. O VideoLauncher é capaz de "desembaralhar" as assinaturas dos vídeos do VEVO, tornando possível a sua reprodução fora do Youtube, e também o download destes vídeos.</p>
+<br/>
+<p>As buscas também extraem informações relevantes da página HTML através de RegEx. As informações extraídas na busca são o Título, descrição, duração, miniatura (no caso do Youtube, também uma imagem de alta resolução) e contagem de visualizações do vídeo. Note que nem todos os sites possuem todas essas informações para os vídeos. Nesses casos, o VideoLauncher deixará os campos vazios.</p>
+<br/>
+<center>
+<b class="big">Imagens</b>
+<br/>
+<img src="http://i1369.photobucket.com/albums/ag208/gdk100/vl_sample_zps8a7c80e9.png" border="0" alt=" photo vl_sample_zps8a7c80e9.png"/>
+</center>
+<br/>
+<div class="downloads_sect">
+<center><b class="big">Download</b></center>
+<p>Desculpe, mas nenhuma versão estável do VideoLauncher foi lançada até o presente momento.</p>
+<p>No entanto, você pode acessar o código atual do projeto <a href="https://github.com/gdkchan/VideoLauncher">clicando aqui</a>.</p>
+</div>
+<br/>
+</div>
+<center><p>~ by gdkchan ~</p></center>
+</body>
+
+</html>
